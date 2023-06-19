@@ -10,6 +10,8 @@ var target = null:
 	set = set_target
 
 func _ready():
+	print(transform)
+	# Duplicate the mater
 	$Sprite2D.material = $Sprite2D.material.duplicate()
 	
 func _physics_process(delta):
